@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  background-color: #000;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  color: white;
+  font-size: 24px;
+  display: flex;
+  border-bottom: 1px solid white;
+}
+header a {
+  width: 33.3333333333%;
+  text-align: center;
+}
+header a:hover {
+  background-color: white;
+  color: black;
+}
+header a + a {
+  border-left: 1px solid white;
+}
+
+.mobile-menu-icon {
+  background-color: transparent;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.mobile-menu-icon > span {
+  background-color: white;
+  width: 35px;
+  height: 2px;
+  display: block;
+  margin-bottom: 9px;
+  transition: transform 0.7s;
+}
+.mobile-menu-icon > span:last-child {
+  margin-bottom: 0;
+}
+
+.menu-open .mobile-menu-icon > span:nth-child(1) {
+  transform: translateY(11px) rotate(135deg);
+}
+.menu-open .mobile-menu-icon > span:nth-child(2) {
+  transform: scale(0);
+}
+.menu-open .mobile-menu-icon > span:nth-child(3) {
+  transform: translateY(-11px) rotate(-135deg);
+}
+
+.animate-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+}
+.animate-title.inview {
+  opacity: 1;
+}
+.animate-title.inview .char {
+  display: inline-block;
+  animation-name: kf-animate-chars;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+.animate-title.inview .char:nth-child(1) {
+  animation-delay: 0.06s;
+}
+.animate-title.inview .char:nth-child(2) {
+  animation-delay: 0.12s;
+}
+.animate-title.inview .char:nth-child(3) {
+  animation-delay: 0.18s;
+}
+.animate-title.inview .char:nth-child(4) {
+  animation-delay: 0.24s;
+}
+.animate-title.inview .char:nth-child(5) {
+  animation-delay: 0.3s;
+}
+.animate-title.inview .char:nth-child(6) {
+  animation-delay: 0.36s;
+}
+.animate-title.inview .char:nth-child(7) {
+  animation-delay: 0.42s;
+}
+.animate-title.inview .char:nth-child(8) {
+  animation-delay: 0.48s;
+}
+.animate-title.inview .char:nth-child(9) {
+  animation-delay: 0.54s;
+}
+.animate-title.inview .char:nth-child(10) {
+  animation-delay: 0.6s;
+}
+.animate-title.inview .char:nth-child(11) {
+  animation-delay: 0.66s;
+}
+.animate-title.inview .char:nth-child(12) {
+  animation-delay: 0.72s;
+}
+
+@keyframes kf-animate-chars {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=style.css.map */

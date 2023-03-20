@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  background-color: #000;
+}
+
+header {
+  color: white;
+  font-size: 24px;
+  display: flex;
+  border-bottom: 1px solid white;
+  
+  .selected {
+    background-color: rgb(201, 201, 201);
+    color: black;
+  }
+
+  .selected:hover {
+    background-color: rgb(201, 201, 201);
+    color: black;
+  }
+
+  a {
+    width: calc(100% / 3);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: white;
+    color: black;
+  }
+
+  a + a {
+    border-left: 1px solid white;
+  }
+
+}
+
+main {
+  width: calc(100% - 64px);
+  margin: 64px auto 0px;
+  color: white;
+  ul {
+    list-style: none;
+
+    li a {
+      color: aqua;
+    }
+
+    li + li {
+      margin-top: 24px;
+    }
+  }
+
+  div + div {
+    margin-top: 64px;
+    border-top: 1px solid blue;
+  }
+}
